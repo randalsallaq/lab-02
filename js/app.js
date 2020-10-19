@@ -1,11 +1,19 @@
 'use strict';
 
+var parentSelect  = document.getElementById('selectid');
+
+var selectArray = ['narwhal', 'rhino', 'unicorn', 'unilego', 'triceratops', 'markhor', 'mouflon', 'addax' , 'chameleon', 'lizard', 'dragon' ]
+
+var allPic = [];
+
+
 function Picture(item) {
     this.title = item.title;
     this.image_url = item.image_url;
     this.description = item.description;
     this.keyword = item.keyword;
     this.horns = item.horns;
+    allPic.push(this);
 }
 
 Picture.prototype.displayPic = function () {
@@ -35,3 +43,29 @@ Picture.readJson = () => {
 };
 
 $(() => Picture.readJson());
+
+
+
+function createSelectList(){
+
+for (var i=0; i < selectArray.length; i++){
+    var optiontag = document.createElement("option");
+   
+   optiontag.textContent = selectArray[i];
+    // option.value = selectArray[i];
+    // option.text = selectArray[i];
+    parentSelect.appendChild(optiontag );
+
+}
+
+}
+
+createSelectList();
+
+
+Picture.prototype.filter = function(){
+
+
+
+
+}
