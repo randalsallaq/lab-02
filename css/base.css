@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fascinate', cursive;
+    
+    
+}
+
+
+body {
+    background-color: #aadbdd;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 20px;
+  
+  }
+  
+  h1{
+      background-color: azure;
+      padding: 2%;
+      font-family: 'Fascinate', cursive;
+      color:rgb(252, 173, 3);
+      font-size: 44px;
+      
+      text-shadow: 2px 2px 5px red;
+     
+  }
+
+
+  select{
+      padding: 1%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: solid 2px coral;
+      
+  }
+
+
+  main{
+      width: 100%;
+      
+  }
+
+
+  /* header{
+    margin-top: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    background-color: #c3f5eb;;
+    animation-name: example;
+    animation-duration: 4s;
+    
+  
+  } */
+
+
+
+  
